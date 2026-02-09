@@ -1,0 +1,135 @@
+/* Reset & global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(120deg, #f8f9fa, #e2e8f0);
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #1a1a1a;
+  color: #fefefe;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fefefe;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+  color: #f0a500;
+  transform: scale(1.05);
+}
+
+/* Sections / Cards */
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #f0a500;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+p, ul {
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+ul li {
+  margin-bottom: 8px;
+  padding-left: 15px;
+  position: relative;
+}
+
+ul li::before {
+  content: "•";
+  color: #f0a500;
+  position: absolute;
+  left: 0;
+}
+
+/* Footer */
+footer {
+  background: #1a1a1a;
+  color: #fefefe;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+/* Buttons (if you add later) */
+button {
+  padding: 10px 20px;
+  background: #f0a500;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background: #ffbf47;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    margin: 20px 15px;
+    padding: 20px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 8px 10px;
+  }
+}
